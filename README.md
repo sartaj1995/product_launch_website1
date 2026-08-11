@@ -1,4 +1,4 @@
-# Belgian Dark Chocolate — Product Launch Landing Page
+# Product Launch Landing Page (Template 1)
 
 A pre-launch countdown landing page for a new flavour/variant of a fictional protein supplement line, built entirely with **[Claude Code](https://claude.com/claude-code)** — fully vibecoded from a single prompt.
 
