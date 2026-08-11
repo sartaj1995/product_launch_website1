@@ -1,0 +1,32 @@
+Use the /ui-ux-pro-max skill to build me a product (flavour) launch website for a new
+whey protein flavour launching soon.
+
+Requirements:
+- Use a fictional, generic brand and product name (e.g. "XYZ Nutrition" / "Vanta
+  Performance Whey") — do NOT use any real company's name, logo, or trademarked
+  product line, even if I provide a reference photo of a real product for style
+  inspiration.
+- Do NOT use real product photography (no scraped/stock photos of an actual real
+  product, even if one exists in a media/ folder). Build the hero product visual as
+  an original CSS/SVG illustration in the same style instead.
+- Any certifications, testing claims, or awards shown must be generic/fictional
+  labels (e.g. "Third-Party Lab Verified"), never the names of real certification
+  bodies (e.g. not "Informed Sport" or "Labdoor").
+- Build it as a pre-launch countdown/hype landing page: countdown timer to the
+  launch date, email "notify me" signup (front-end only is fine, no backend), key
+  feature/claims highlights, a flavour/taste story section, trust badges, and an
+  FAQ.
+- Static HTML/CSS/JS, no build step, fully responsive (mobile/tablet/desktop),
+  accessible, with reduced-motion support.
+- Ask me clarifying questions first (flavour name/taste, launch date, tone/style,
+  CTA behavior, page type) before building anything.
+- Test the built page in-browser (desktop and mobile widths) before calling it done.
+- When committing, exclude any reference/inspiration images I dropped in a media/
+  (or similar) folder, and exclude Claude Code's own tooling files (.claude/) —
+  only the actual site files (HTML/CSS/JS) should go into git.
+- Don't commit to main — create a new branch, commit, push, and open a pull request
+  via `gh pr create` (install/prompt me to auth `gh` if it's not already set up) so
+  I can review and merge it myself.
+- After I confirm the PR is merged, remind me that I can enable GitHub Pages
+  (Settings → Pages → Deploy from branch → main → /root) to make it live, and
+  offer to do it for me via `gh api` if I'd rather not click through the UI.
