@@ -1,32 +1,58 @@
-Use the /ui-ux-pro-max skill to build me a product (flavour) launch website for a new
-whey protein flavour launching soon.
+Use the /ui-ux-pro-max skill to build a pre-launch countdown landing page for a new
+flavour/variant of an existing product line.
 
-Requirements:
-- Use a fictional, generic brand and product name (e.g. "XYZ Nutrition" / "Vanta
-  Performance Whey") — do NOT use any real company's name, logo, or trademarked
-  product line, even if I provide a reference photo of a real product for style
-  inspiration.
-- Do NOT use real product photography (no scraped/stock photos of an actual real
-  product, even if one exists in a media/ folder). Build the hero product visual as
-  an original CSS/SVG illustration in the same style instead.
-- Any certifications, testing claims, or awards shown must be generic/fictional
-  labels (e.g. "Third-Party Lab Verified"), never the names of real certification
-  bodies (e.g. not "Informed Sport" or "Labdoor").
-- Build it as a pre-launch countdown/hype landing page: countdown timer to the
-  launch date, email "notify me" signup (front-end only is fine, no backend), key
-  feature/claims highlights, a flavour/taste story section, trust badges, and an
-  FAQ.
-- Static HTML/CSS/JS, no build step, fully responsive (mobile/tablet/desktop),
-  accessible, with reduced-motion support.
-- Ask me clarifying questions first (flavour name/taste, launch date, tone/style,
-  CTA behavior, page type) before building anything.
-- Test the built page in-browser (desktop and mobile widths) before calling it done.
-- When committing, exclude any reference/inspiration images I dropped in a media/
-  (or similar) folder, and exclude Claude Code's own tooling files (.claude/) —
-  only the actual site files (HTML/CSS/JS) should go into git.
-- Don't commit to main — create a new branch, commit, push, and open a pull request
-  via `gh pr create` (install/prompt me to auth `gh` if it's not already set up) so
-  I can review and merge it myself.
-- After I confirm the PR is merged, remind me that I can enable GitHub Pages
-  (Settings → Pages → Deploy from branch → main → /root) to make it live, and
-  offer to do it for me via `gh api` if I'd rather not click through the UI.
+Ask me clarifying questions first: what the product/flavour is, the launch date,
+brand tone, and how the CTA should behave — before building anything.
+
+BRAND & ASSETS (guardrails)
+- Use a fictional, generic brand and product name — never a real company's name,
+  logo, or trademarked product line, even if I provide a reference photo for style
+  inspiration only.
+- Do not use real/scraped product photography anywhere on the page. Build the hero
+  product visual as an original CSS/SVG illustration (e.g. an illustrated tub/box/
+  bottle with a logo mark, product name, and a flavour-coloured label band) in the
+  same visual style as any reference image.
+- Any certifications, lab-testing claims, or awards shown must be generic/fictional
+  labels, never real certification bodies' names.
+
+PAGE STRUCTURE
+1. Sticky header — logo mark + wordmark, section nav links, a primary "Notify Me"
+   CTA button, and a hamburger menu that opens a full-screen mobile nav overlay.
+2. Hero — eyebrow badge ("New · launch date"), large headline with a gradient
+   accent on the key word, one-paragraph pitch, a row of 2-3 trust/claim chips
+   with icons, a live countdown timer (days/hours/mins/secs), an email "notify me"
+   form (client-side validation + success state, no backend needed), and the
+   illustrated product visual with a "New" ribbon and a one-line disclaimer
+   caption underneath it.
+3. A horizontally auto-scrolling marquee strip of short claim chips (icon + text).
+4. A 4-card feature/benefit grid (icon, title, one-line description each).
+5. A two-column "story" section: a decorative abstract visual on one side, and on
+   the other an eyebrow label, a tagline, a short paragraph, and a checklist of
+   3 bullet points.
+6. A certifications/trust grid (icon + label chips, generic/fictional).
+7. An FAQ accordion (single-open-at-a-time, expand/collapse with icon rotation).
+8. A closing full-width CTA section repeating the email capture form.
+9. A footer — brand block with tagline and social icons, 1-2 link columns, and a
+   bottom bar with copyright plus a short disclaimer noting this is a fictional
+   demo/portfolio project.
+
+DESIGN & INTERACTION
+- Dark, premium theme with one accent colour and a warm secondary accent tied to
+  the flavour/variant being launched.
+- A condensed/bold display font for headings paired with a regular sans for body
+  text.
+- Scroll-reveal animations on section entry, respecting prefers-reduced-motion.
+- Fully responsive (mobile/tablet/desktop), accessible (focus states, alt/aria
+  labels, 4.5:1 contrast), static HTML/CSS/JS with no build step.
+- Test the built page in-browser at mobile and desktop widths before calling it
+  done.
+
+DELIVERY
+- Exclude any reference/inspiration images I drop in a media/ folder, and exclude
+  Claude Code's own tooling files (.claude/), from what gets committed — only the
+  site's HTML/CSS/JS.
+- Don't commit to main — create a branch, commit, push, and open a PR via
+  `gh pr create` (install/prompt me to auth `gh` if needed) so I can review and
+  merge it myself.
+- After I confirm the PR is merged, remind me I can enable GitHub Pages to make it
+  live, and offer to do it via `gh api` if I'd rather not click through the UI.
