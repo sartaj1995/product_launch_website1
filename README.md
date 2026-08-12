@@ -4,6 +4,14 @@ A pre-launch countdown landing page for a new flavour/variant of a fictional pro
 
 🔗 **[View the prompt used to build this](prompt.txt)**
 
+## Prerequisites
+
+This project's prompt uses the **UI/UX Pro Max** Claude Code skill. If you don't already have it installed, install it first:
+
+```bash
+uipro init --ai claude
+```
+
 ## About
 
 This is a portfolio/demo project: a fictional brand ("XYZ Nutrition") launching a fictional product flavour ("Belgian Dark Chocolate"). No real brand names, logos, or product photography are used — the hero product visual is an original CSS/SVG illustration.
