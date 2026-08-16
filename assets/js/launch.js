@@ -1,7 +1,7 @@
 (function () {
   'use strict';
 
-  var LAUNCH_DATE = new Date('2026-08-15T00:00:00+05:30');
+  var LAUNCH_DATE = new Date('2026-08-25T00:00:00+05:30');
   var WAITLIST_KEY = 'xyz-nutrition-vanta-belgian-dark-chocolate-waitlist';
 
   document.getElementById('year').textContent = new Date().getFullYear();
